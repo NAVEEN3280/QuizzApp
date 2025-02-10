@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: Irish Grover;
+  background-color: #ffdfba;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 20px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 3rem;
+  background-image: linear-gradient(
+    to right,
+    #fc00ff 0%,
+    #00dbde 51%,
+    #fc00ff 100%
+  );
+  color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#topic-selection {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.topic {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  flex-grow: 1;
+  flex-basis: 300px;
+  transition: 0.5s;
+}
+.topic img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+.topic:hover {
+  transform: translateY(15px);
+}
+
+.science button {
+  margin: 1rem;
+  width: 190px;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+  box-shadow: 0px 0px 0px 3px black;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #ffc83d;
+  color: black;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  transition: all 0.9s ease-in-out;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.science button:hover {
+  background-color: #f03a17;
+  color: white;
+}
+
+.science button::before {
+  content: "🤓";
+  position: absolute;
+  left: -0rem;
+  top: 0rem;
+  opacity: 1;
+  font-size: 1.55rem;
+  transition: all 0.9s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.science button:hover::before {
+  content: "🧪";
+  opacity: 1;
+  visibility: visible;
+  transform: rotate(40deg);
+  font-size: 2.5rem;
+  top: -0.75rem;
+  transition: all 0.9s ease-in-out;
+  animation: rightRun 2s forwards;
+}
+
+.science button:active::before {
+  content: "😏";
+}
+
+@keyframes rightRun {
+  100% {
+    transform: translateX(140px);
+  }
+}
+
+.history button {
+  margin: 1rem;
+  width: 190px;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+  box-shadow: 0px 0px 0px 3px black;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #ffc83d;
+  color: black;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  transition: all 0.9s ease-in-out;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.history button:hover {
+  background-color: #f03a17;
+  color: white;
+}
+
+.history button::before {
+  content: "🧐";
+  position: absolute;
+  left: -0rem;
+  top: 0rem;
+  opacity: 1;
+  font-size: 1.55rem;
+  transition: all 0.9s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.history button:hover::before {
+  content: "🦖";
+  opacity: 1;
+  visibility: visible;
+  transform: rotate(40deg);
+  font-size: 2.5rem;
+  top: -0.75rem;
+  transition: all 0.9s ease-in-out;
+  animation: rightRun 2s forwards;
+}
+
+.history button:active::before {
+  content: "🤠";
+}
+
+@keyframes rightRun {
+  100% {
+    transform: translateX(140px);
+  }
+}
+
+.math button {
+  margin: 1rem;
+  width: 190px;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+  box-shadow: 0px 0px 0px 3px black;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #ffc83d;
+  color: black;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  transition: all 0.9s ease-in-out;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.math button:hover {
+  background-color: #f03a17;
+  color: white;
+}
+
+.math button::before {
+  content: "🙄";
+  position: absolute;
+  left: -0rem;
+  top: 0rem;
+  opacity: 1;
+  font-size: 1.55rem;
+  transition: all 0.9s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.math button:hover::before {
+  content: "➗";
+  opacity: 1;
+  visibility: visible;
+  transform: rotate(40deg);
+  font-size: 2.5rem;
+  top: -0.75rem;
+  transition: all 0.9s ease-in-out;
+  animation: rightRun 2s forwards;
+}
+
+.math button:active::before {
+  content: "🤩";
+}
+
+@keyframes rightRun {
+  100% {
+    transform: translateX(140px);
+  }
+}
+
+#options button {
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: purple;
+  color: white;
+  transition: all 0.7s ease-in-out;
+}
+
+#options button:hover {
+  color: #fff;
+}
+
+#options button::before {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  width: 0;
+  height: 100%;
+  content: "";
+  background-color: orange;
+  transition: all 700ms ease-in-out;
+}
+
+#options button:hover::before {
+  left: unset;
+  right: 0;
+  width: 100%;
+  transform: rotate(180deg);
+}
+.hidden {
+  display: none;
+}
+
+.correct {
+  color: green;
+  animation: bounce 0.5s ease-in-out;
+}
+
+.wrong {
+  color: red;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
